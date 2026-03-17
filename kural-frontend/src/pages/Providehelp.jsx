@@ -35,7 +35,7 @@ function ProvideHelp() {
 
   // 🔥 Initialize data (avoid first alert)
   useEffect(() => {
-    axios.get("http://localhost:5001/requests").then((res) => {
+    axios.get("https://kural-1.onrender.com/requests").then((res) => {
       prevCountRef.current = res.data.length;
       setRequests(res.data);
     });
@@ -45,7 +45,7 @@ function ProvideHelp() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5001/requests");
+        const res = await axios.get("https://kural-1.onrender.com/requests");
 
         if (res.data.length > prevCountRef.current) {
           console.log("🚨 New Request");
