@@ -31,7 +31,7 @@ function HelpDetails() {
         try {
           // ✅ FIXED PORT HERE
           const res = await axios.post(
-            "http://localhost:5001/request",
+            "https://kural-1.onrender.com/request",
             newRequest
           );
 
