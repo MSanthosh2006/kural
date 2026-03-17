@@ -120,7 +120,7 @@ function ProvideHelp() {
 
     try {
       await axios.put(
-        `http://localhost:5001/request/${id}`,
+        `https://kural-1.onrender.com/request/${id}`,
         { status: newStatus }
       );
     } catch (err) {
